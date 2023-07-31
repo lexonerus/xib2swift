@@ -1,8 +1,41 @@
 body { 
     min-height: 100vh; 
-    background-color: whitesmoke;
+    background-color: #e6f2ff;
     margin: 0;
     padding: 0;
+}
+
+#title {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#bottom-text {
+    text-align: left;
+    padding-left: 5%;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#header {
+    text-align: center;
+    background-color: #fff;
+    padding: 0px;
+}
+
+#top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+    padding-left: 60px;
+    width: 100%;
+    height: 30px;
+    background-color: #e6f2ff;
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
 #menu {
@@ -12,7 +45,21 @@ body {
     align-items: center;
     width: 100%;
     height: 30px;
-    background-color: blue;
+    background-color: #e6f2ff;
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#bottom-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding-left: 5%;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    background-color: #e6f2ff;
     color: white;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
@@ -24,42 +71,65 @@ body {
     justify-content: center;
     width: 100%;
     height: 100%;
-    border-radius: 5px;
+    border: none;
+    outline: none;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
     resize: none;
 }
 
 #firstbox {
-    width: 50%;
+    width: 45%;
     height: 100%;
-    border: 1px solid black;
-    padding: 20px;
+    border: none;
+    outline: none;
+    padding: 15px;
 
 }
 #secondbox {
-    width: 50%;
+    width: 45%;
     height: 100%;
-    border: 1px solid black;
-    padding: 20px;
+    border: none;
+    outline: none;
+    padding: 15px;
 }
+
+  /* CSS for the button */
+  #generate-button {
+    border: none; /* Remove the button border */
+    background-color: #007aff; /* Set the background color to blue */
+    color: white; /* Set the text color to white */
+    padding: 10px 20px; /* Add some padding to make the button look nicer */
+    cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
+    font-size: 16px; /* Adjust the font size as needed */
+    /* You can also add other styles to customize the button further */
+  }
+
+  /* Optional: To style the button when hovering over it */
+  #generate-button:hover {
+    background-color: #5ac8fa; /* Change the background color on hover */
+    /* Add any additional styles for the hover effect */
+  }
+
+  /* CSS for the button */
+  #button {
+    margin-right: 10px;
+    border: none; /* Remove the button border */
+    background-color: #007aff; /* Set the background color to blue */
+    color: white; /* Set the text color to white */
+    padding: 10px 20px; /* Add some padding to make the button look nicer */
+    cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
+    font-size: 16px; /* Adjust the font size as needed */
+    /* You can also add other styles to customize the button further */
+  }
+
+  /* Optional: To style the button when hovering over it */
+  #button:hover {
+    background-color: #5ac8fa; /* Change the background color on hover */
+    /* Add any additional styles for the hover effect */
+  }
 
 textarea {
     width: 100%;
     height: 100%;
-}
-
-
-@media screen and (max-width: 1024px) {
-    #box {
-        flex-wrap: wrap;
-    }
-    #firstbox {
-        width: 100%;
-        height: 50%;
-    }
-    #secondbox {
-        width: 100%;
-        height: 50%;
-    }
 }

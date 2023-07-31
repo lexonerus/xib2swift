@@ -5,21 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Xib to Swift</title>
     <link rel="stylesheet" href="./style.css">
+    <div id="header">
+        <h1>Xib to Swift converter</h1>
+    </div>
 </head>
 
 <body>
-    <div id="menu">
-        <button id="generate-button">Convert</button>
-    </div>
     <div id="box">
         <div id="firstbox">
-            <textarea name="input-Text" id="input-Text" cols="30" rows="10"></textarea>
+            <div id="title">
+                <p>Please enter here your .xib file source code (righ button click -> open as source code)</p>
+            </div>
+            <textarea name="input-Text" id="input-Text" cols="25" rows="30"></textarea>
         </div>
         <div id="secondbox">
-            <textarea name="output-Text" id="output-Text" cols="30" rows="10"></textarea>
+            <div id="title">
+                <p>Output for generated swift code below</p>
+            </div>
+            <textarea name="output-Text" id="output-Text" cols="25" rows="30"></textarea>
         </div>
+    </div>
+    <div id="menu">
+        <button id="generate-button">Convert Xib to Swift</button>
+    </div>
+    <div id="bottom-menu">
+    <button id="button", onclick="myFunction()">Home page</button>
+        <script>
+            function myFunction() {
+                const link = "https://www.lexone.ru";
+                window.location.href = link;
+            }
+        </script>
+    </div>
+    <div id="bottom-text">
+        <p>If you like this generator, please leave a star:</p>
+        <p>My code repo <a href="https://github.com/lexonerus/xib2swift">https://github.com/lexonerus/xib2swift</a></p>
+        <p>Thanx for origin code <a href="https://github.com/vinicius-caputo/xib2swift">https://github.com/vinicius-caputo/xib2swift</a></p>
     </div>
     <script src="bundle.js" ></script>
 </body>

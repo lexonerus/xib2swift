@@ -1,7 +1,6 @@
 import { xib2swift } from "../src/xib2swift";
 
 const button = document.getElementById("generate-button") as HTMLButtonElement;
-
 button.addEventListener("click", generate);
 
 function generate() {
@@ -13,3 +12,4 @@ function generate() {
     output.value = viewcode;
      
 }
+
